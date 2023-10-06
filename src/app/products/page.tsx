@@ -53,7 +53,7 @@ export const ProductHomePage = () =>
 
     return(
         <>
-        <div>
+        <div className="m-2 px-6 shadow">
             {productDivs}
         </div>
         </>

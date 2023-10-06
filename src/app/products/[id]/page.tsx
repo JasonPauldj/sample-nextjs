@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 import { Product } from "../types";
+import ProductDetailedCard from "../components/productDetailedCard";
 
 export default ({params} : {params: {id:number}}) => {
 
@@ -34,24 +35,8 @@ export default ({params} : {params: {id:number}}) => {
 
     return(
     <div>
-        {product ?  <div className='mb-2 mt-2 '>
-        <div>
-            <div className='shadow card-bg card-txt-color'>
-                <div >
-                    {/*  */}
-                    <div>{product!.title}</div>
-                </div>
-                <div>
-                    <div>
-                        {product!.description}
-                    </div>
-                </div>
-                <div>
-                    <img src={product.images[0]} className="w-64 h-64" />
-                </div>
-            </div>
-        </div>
-    </div>   : <div>No Product found</div>    }
+        {product ?  
+        <ProductDetailedCard  product={product}/>  : <div>No Product found</div>    }
     </div>
          
    
