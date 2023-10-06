@@ -1,22 +1,24 @@
 "use client"
 import { useEffect, useState } from "react";
 import { BACKEND_URL } from "@/configVariables";
+import { Product } from "./types";
+import { ProductCard } from "./components/productCard";
 
 export default () => 
 {
-    interface Product {
-        id: number
-        title: string
-        description: string
-        price: number
-        discountPercentage: number
-        rating: number
-        stock: number
-        brand: string
-        category: string
-        thumbnail: string
-        images: string[]
-      }
+    // interface Product {
+    //     id: number
+    //     title: string
+    //     description: string
+    //     price: number
+    //     discountPercentage: number
+    //     rating: number
+    //     stock: number
+    //     brand: string
+    //     category: string
+    //     thumbnail: string
+    //     images: string[]
+    //   }
     const [products, setProducts] = useState<Product[]>([]);
 
     const fetchProducts = async () => {
@@ -46,7 +48,7 @@ export default () =>
     let productDivs;
     if(products.length > 0)
     {
-        productDivs = products.map((p) => <div>{p.title}</div>);
+        productDivs = products.map((p) => <ProductCard product={p}/>);
     }
 
     return(
