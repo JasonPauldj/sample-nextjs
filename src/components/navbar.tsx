@@ -10,6 +10,9 @@ export const Navbar = () => {
                 <li className="mr-6">
                     <Link className="hover:text-blue-800" href="/">View Products</Link>
                 </li>
+                <li className="mr-6">
+                    <Link className="hover:text-blue-800" href="/products/search">Search By Category</Link>
+                </li>
             </ul>
             </div>
         </nav>

@@ -6,19 +6,6 @@ import { ProductCard } from "./components/productCard";
 
 export const ProductHomePage = () => 
 {
-    // interface Product {
-    //     id: number
-    //     title: string
-    //     description: string
-    //     price: number
-    //     discountPercentage: number
-    //     rating: number
-    //     stock: number
-    //     brand: string
-    //     category: string
-    //     thumbnail: string
-    //     images: string[]
-    //   }
     const [products, setProducts] = useState<Product[]>([]);
 
     const fetchProducts = async () => {
