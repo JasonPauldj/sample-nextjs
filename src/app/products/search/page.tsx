@@ -73,9 +73,12 @@ export const SearchPage = () =>
     
     return(
         <>
-        <select value={selCat} onChange={(event:ChangeEvent<HTMLSelectElement>) => {setSelCat(event.target.selectedOptions[0].value)}}>
+        <div className="w-screen mx-auto text-center my-2" >
+        <select className="w-6/12" value={selCat} onChange={(event:ChangeEvent<HTMLSelectElement>) => {setSelCat(event.target.selectedOptions[0].value)}}>
             {options}
         </select>
+
+        </div>
         <div className="m-2 px-6 shadow">
             {productDivs}
         </div>

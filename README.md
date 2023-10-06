@@ -1,3 +1,11 @@
+## Overview
+This project is a demonstration of a Product Viewer and Product Search Engine developed using Typescript, Tailwind CSS, and Next.js. It leverages the dummyJSON API to retrieve product details
+
+## Skills
+- Typescript
+- Tailwind CSS
+- Next.js
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
