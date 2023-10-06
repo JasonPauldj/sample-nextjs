@@ -4,7 +4,7 @@ import { BACKEND_URL } from "@/configVariables";
 import { Product } from "./types";
 import { ProductCard } from "./components/productCard";
 
-export default () => 
+export const ProductHomePage = () => 
 {
     // interface Product {
     //     id: number
@@ -53,10 +53,11 @@ export default () =>
 
     return(
         <>
-        <h1>Products Page</h1>
         <div>
             {productDivs}
         </div>
         </>
     )
 }
+
+export default ProductHomePage;
